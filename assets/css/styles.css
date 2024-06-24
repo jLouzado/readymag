@@ -1,5 +1,6 @@
 *{
     font-family: rxyp, sans-serif;
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 body{
@@ -41,14 +42,14 @@ a.nav-link.active, a.nav-link:hover {
     background-image: url("../../assets/img/hand.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 
 .main-banner .animated-gif{
     background-image: url("../../assets/img/animated-logo.gif");
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: -50% center;
+    background-position: 15% center;
 }
 
 .main-banner .main-title{
@@ -56,12 +57,13 @@ a.nav-link.active, a.nav-link:hover {
 }
 
 .main-banner .main-title h1{
-    padding-right:0;
-    font-weight:600;
+    padding-right: 0;
+    font-weight: 600;
     font-size: 7.5rem;
     position: absolute;
     left: 20%;
-    top: 25%;
+    top: 4%;
+    line-height: 7.5rem;
 }
 .info-banner{
     display: flex;
@@ -180,3 +182,81 @@ a.read-more{
     left: 68%;
     bottom: -10%;
 }
+
+footer{
+    background: #8d18b6;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.slider-control {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.slider-control i {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.slider-control i:hover{
+    transform: scale(1.1);
+}
+
+.slider-control button {
+    background: transparent;
+    border: 0;
+}
+
+header {
+    z-index: 99999 !important;
+    display: block;
+    position: relative;
+}
+
+.banner-green{
+    background-image: url("../../assets/img/main-banner-2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: #475914;
+    min-height: 95vh;
+    border-radius: 15px;
+    padding: 5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.banner-green h1 {
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+
+section.banner-green p {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
