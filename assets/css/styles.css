@@ -1,0 +1,182 @@
+*{
+    font-family: rxyp, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #8d18b6;
+    border-radius: 15px;
+}
+
+.navbar .navbar-brand img{
+    filter: brightness(0) invert(1);
+}
+
+a.nav-link {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+a.nav-link.active, a.nav-link:hover {
+    text-decoration: underline;
+}
+
+.main-banner{
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+}
+
+.main-banner > .row{
+    height: 75vh;
+}
+
+.hand-bg{
+    background-image: url("../../assets/img/hand.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-banner .animated-gif{
+    background-image: url("../../assets/img/animated-logo.gif");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: -50% center;
+}
+
+.main-banner .main-title{
+
+}
+
+.main-banner .main-title h1{
+    padding-right:0;
+    font-weight:600;
+    font-size: 7.5rem;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.info-banner{
+    display: flex;
+    align-content: center;
+    padding: 2rem 5rem;
+    background-image: url("../../assets/img/childrens.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 42%;
+    min-height: 60vh;
+}
+
+.info-banner h3{
+    color: rgba(206, 29, 29, 1);
+    font-size: 3.6rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.info-banner .animated-text{
+    width: 90%;
+    object-fit: contain;
+    margin-left: -1.4rem;
+}
+
+.big-text{
+    padding-bottom: 0 !important;
+}
+
+.big-text h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+.right-big-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.big-text-red{
+    background-color: rgb(206, 29, 29);
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    width: fit-content;
+    letter-spacing: -2px;
+    line-height: 4rem;
+    transform: rotate(2deg);
+    font-weight: 500;
+}
+
+.big-text-orange{
+    background-color: #ea7708;
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 15px;
+    width: fit-content;
+    letter-spacing: -2px;
+    line-height: 4rem;
+    transform: rotate(-4deg);
+    padding: 2rem 3rem;
+    font-weight: 500;
+    min-width: 42rem;
+}
+
+.before-footer{
+    background-image: url("../../assets/img/happy-children.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.before-footer .bg-image{
+    transform: rotateY(180deg);
+    width: 100%;
+}
+
+.before-footer .headings{
+    padding: 3rem 5rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.before-footer .headings h3{
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+}
+
+.before-footer .headings p{
+    font-size: 2.6rem;
+    line-height: 3rem;
+    color: #ce1d1d;
+}
+
+a.read-more{
+    background-color: rgb(71, 89, 20);
+    color: #fff;
+    padding: 0 2rem 1rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    border-radius: 150px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.before-footer-animated{
+    position: absolute;
+    width: 23rem;
+    left: 68%;
+    bottom: -10%;
+}
