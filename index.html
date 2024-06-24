@@ -23,6 +23,10 @@
         font-family: rxyp, sans-serif;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .navbar{
         background-color: #8d18b6;
         border-radius: 15px;
@@ -40,6 +44,45 @@
 
     a.nav-link.active, a.nav-link:hover {
         text-decoration: underline;
+    }
+
+    .main-banner{
+        min-height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column;
+    }
+
+    .main-banner > .row{
+        height: 75vh;
+    }
+
+    .hand-bg{
+        background-image: url("hand.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main-banner .animated-gif{
+        background-image: url("animated-logo.gif");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: -50% center;
+    }
+
+    .main-banner .main-title{
+
+    }
+
+    .main-banner .main-title h1{
+        padding-right:0;
+        font-weight:600;
+        font-size: 7.5rem;
+        position: absolute;
+        left: 20%;
+        top: 25%;
     }
 
 </style>
@@ -73,6 +116,16 @@
             </div>
         </div>
     </nav>
+
+    <section class="main-banner">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-sm-1 col-xs-1 hand-bg"> </div>
+            <div class="col-md-6 col-lg-4 col-sm-1 col-xs-1 d-flex justify-content-center align-items-center main-title">
+                <h1>JOIN THE <br> MAD party!</h1>
+            </div>
+            <div class="col-md-3 col-lg-4 col-sm-1 col-xs-1 animated-gif"> </div>
+        </div>
+    </section>
 
 
 
