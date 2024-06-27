@@ -3,6 +3,8 @@ let currentSlide = 0;
 const url = new URL(window.location.href);
 const params = url.searchParams;
 let page_num = params.get('page');
+let nav_menu_li = document.querySelectorAll('ul.navbar-nav li');
+let nav_menu_items = document.querySelector('ul.navbar-nav a.nav-link');
 
 if( page_num ) {
     currentSlide = page_num - 1;
@@ -24,11 +26,17 @@ function changeSlide(direction) {
         currentSlide = (currentSlide + 1) % 3 || 3;
     }
 
-// Show current slide
+    // Show current slide
     document.querySelector(`#slide-${currentSlide}`).style.display = 'block';
 
-// Update URL
+    // Update URL
     window.history.pushState({}, '', `?page=${currentSlide}`);
+
+    // change active menu item based on current page
+    nav_menu_items.classList.remove('active');
+    nav_menu_li[currentSlide-1].getElementsByTagName('a')[0].classList.add('active');
+    window.scrollTo(0, 0);
+
 }
 
 // Add event listeners

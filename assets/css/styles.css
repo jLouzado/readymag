@@ -1,6 +1,12 @@
 *{
     font-family: rxyp, sans-serif;
     transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    text-decoration: none;
+    outline: 0;
+}
+
+a{
+    display: block;
 }
 
 body{
@@ -45,26 +51,44 @@ a.nav-link.active, a.nav-link:hover {
     background-position: left;
 }
 
-.main-banner .animated-gif{
-    background-image: url("../../assets/img/animated-logo.gif");
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: 15% center;
+/*.main-banner .animated-gif{*/
+/*    background-image: url("../../assets/img/animated-logo.gif");*/
+/*    background-size: 60%;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 15% center;*/
+/*}*/
+
+.animated-gif{
+    position: relative;
+}
+
+.animated-gif a {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.animated-gif a img{
+    width: 450px;
+    height: auto;
+    object-fit: contain;
 }
 
 .main-banner .main-title{
 
 }
 
-.main-banner .main-title h1{
+.main-banner .main-title h1 {
     padding-right: 0;
     font-weight: 600;
     font-size: 7.5rem;
     position: absolute;
-    left: 20%;
-    top: 4%;
+    left: 36%;
+    top: 20%;
     line-height: 7.5rem;
+    width: 100%;
 }
+
 .info-banner{
     display: flex;
     align-content: center;
@@ -202,10 +226,9 @@ footer p{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    position: absolute;
 }
 
 .slider-control i {
@@ -213,6 +236,7 @@ footer p{
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 
@@ -223,6 +247,16 @@ footer p{
 .slider-control button {
     background: transparent;
     border: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.slider-control button.next {
+    right: 1rem;
+}
+
+.slider-control button.prev {
+    left: 1rem;
 }
 
 header {
@@ -261,7 +295,11 @@ section.banner-green p {
 
 img.who-is-it-img {
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 12rem;
+}
+
+.red-circle-before{
+    position: relative;
 }
 
 .red-circle-before:before {
@@ -272,38 +310,319 @@ img.who-is-it-img {
     position: absolute;
     border-radius: 100%;
     z-index: -1;
-    bottom: 10%;
-    left: 7%;
+    bottom: 4%;
+    left: 5%;
 }
 
-.red-circle-before:after{
-    content: '';
-    background-image: url("../../assets/img/animated-logo-green.gif");
-    z-index: 1;
+a.cta-green-who-is-it {
     position: absolute;
-    width: 450px;
-    height: 450px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    left: 8%;
-    bottom: 5%;
+    left: 18%;
+    bottom: 13%;
+    z-index: 2;
 }
+
+a.cta-green-who-is-it img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*.red-circle-before:after{*/
+/*    content: '';*/
+/*    background-image: url("../../assets/img/animated-logo-green.gif");*/
+/*    z-index: 1;*/
+/*    position: absolute;*/
+/*    width: 450px;*/
+/*    height: 450px;*/
+/*    background-position: center;*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+/*    left: 12%;*/
+/*    bottom: 5%;*/
+/*}*/
 
 section.who-is-it.row h3 {
     font-weight: bold;
     font-size: 3.5rem;
     letter-spacing: -3px;
+    margin-top: 4rem;
+}
+
+section.who-is-it.row p {
+    color: #ce1d1d;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+h4.green-text-banner {
+    background: #475914;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    transform: rotate(2deg);
+    margin-top: 3rem;
+    font-weight: 100;
+}
+
+h4.pink-text-banner {
+    background: #8d18b6;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    transform: rotate(-2deg);
+    margin-top: -0.5rem;
+    font-weight: 100;
+}
+
+h4.orange-text-banner{
+    background: #ea7708;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    transform: rotate(2deg);
+    margin-top: -1rem;
+    font-weight: 100;
+}
+
+.w-fit-content{
+    width: fit-content;
+}
+
+.cta-red {
+    text-align: center;
+    margin: 0 0 6rem;
+}
+
+.cta-red a {
+    background: #ce1d1d;
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 15px;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-decoration: none;
+    transform: rotate(1deg);
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.madster{
+    background-image: url("../../assets/img/madster-bg.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 2rem;
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
 }
 
 
+.madster:before {
+    content: '';
+    width: 35rem;
+    height: 35rem;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    background-color: #8d18b6;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.madster h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-bottom: 3rem;
+}
+
+.container-fluid{
+    width: 90%;
+}
+
+.madster p {
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #8d18b6;
+    line-height: 2.7rem;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+}
+
+section.madster p:last-child {
+    margin-bottom: 4rem;
+}
+
+section.orange-cta.row {
+    background: #ea7708;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.orange-cta.row img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+section.orange-cta.row p {
+    font-size: 2.1rem;
+    line-height: 3rem;
+}
+
+p.red-small-text {
+    color: #753b04;
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+    margin-top: -1.5rem !important;
+}
+
+.what-is-expected {
+    overflow: hidden;
+    background-image: url("../../assets/img/people-study.webp");
+    background-position: right -2rem;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    min-height: 80vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.what-is-expected:before {
+    content: '';
+    width: 650px;
+    height: 650px;
+    background: #ce1d1d;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    bottom: 1%;
+    right: 10%;
+}
+
+a.cta-orange-expected img {
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+a.cta-orange-expected {
+    position: absolute;
+    bottom: -1%;
+    right: 30%;
+}
+
+section.what-is-expected h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+section.what-is-expected li, p {
+    font-size: 1.8rem;
+}
+
+section.banner-green-2 {
+    background-color: #475914;
+    min-height: 80vh;
+    border-radius: 15px;
+    background-image: url("../../assets/img/group-people.webp");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 
 
+section.banner-green-2 h1 {
+    margin: 4rem 0;
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #fff;
+}
 
+.trans-bg {
+    background: #ffffff61;
+    border-radius: 15px;
+    padding: 3rem;
+    position: relative;
+}
 
+.trans-bg h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
+.trans-bg p {
+    font-size: 2.5rem;
+}
 
+.trans-bg:after {
+    content: '';
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: -15rem;
+    right: -15rem;
+    background-image: url("../../assets/img/heart.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(33deg);
+}
 
+.trans-bg:before {
+    content: '';
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 3rem;
+    right: -10rem;
+    background-image: url("../../assets/img/heart.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(38deg);
+}
+
+section.community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.community a img {
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+section.community h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+section.community p {
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    padding-left: 5rem;
+}
 
 
 
