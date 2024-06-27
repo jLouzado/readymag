@@ -64,12 +64,12 @@ a.nav-link.active, a.nav-link:hover {
 
 .animated-gif a {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
+    bottom: 0;
+    right: 8%;
 }
 
 .animated-gif a img{
-    width: 450px;
+    width: 20rem;
     height: auto;
     object-fit: contain;
 }
@@ -237,6 +237,7 @@ footer p{
     height: 50px;
     cursor: pointer;
     z-index: 9999;
+    filter: drop-shadow(1px 1px 2px #fff);
 }
 
 

@@ -1,0 +1,304 @@
+/* Small devices (tablets, 1000px and up) */
+@media only screen and (max-width: 1000px) {
+
+    .hand-bg {
+        background-size: 80%;
+    }
+
+    .navbar-toggler:focus {
+        outline: 0;
+    }
+
+    a.nav-link {
+        font-size: 1rem;
+    }
+
+    nav.navbar .container-fluid {
+        width: 100%;
+        padding: 0.3rem 2rem !important;
+    }
+
+    button.navbar-toggler {
+        border: 0;
+        font-size: 2rem;
+    }
+
+
+
+    .main-banner .main-title h1 {
+        padding-right: 0;
+        font-weight: 600;
+        font-size: 4.5rem;
+        position: absolute;
+        left: 36%;
+        top: 20%;
+        line-height: 5.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .animated-gif a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    section.big-text .row.w-100 {
+        flex-flow: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-big-text {
+        width: 100%;
+    }
+
+    .right-big-text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .before-footer {
+        background-image: url("../../assets/img/happy-children.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        flex-flow: column;
+        display: flex;
+        height: 120vh;
+    }
+
+    .before-footer .headings {
+        padding: 0 5rem;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .before-footer-animated {
+        position: relative;
+        width: 30rem;
+        left: unset;
+        bottom: unset;
+    }
+
+    a.orange-cta-home {
+        margin-right: 5rem;
+        position: absolute;
+        right: 0;
+        top: 70%;
+    }
+
+    .banner-green {
+        background-position: bottom -15% right -23%;
+        background-size: 60%;
+        min-height: 97vh;
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    section.who-is-it.row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .red-circle-before {
+        position: relative;
+        width: 100%;
+    }
+
+    img.who-is-it-img {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    section.who-is-it.row .col-md-6:last-child {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h4.green-text-banner {
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h4.pink-text-banner {
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h4.orange-text-banner {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .cta-red a {
+        transform: unset !important;
+        margin: 1rem;
+    }
+
+    .madster h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: -3px;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .madster {
+        background-position: bottom -5rem center;
+        min-height: 120vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .madster:before {
+        content: '';
+        width: 50rem;
+        height: 50rem;
+        position: absolute;
+        right: 10%;
+        bottom: -13%;
+        background-color: #8d18b6;
+        z-index: -1;
+        border-radius: 100%;
+    }
+
+    section.orange-cta.row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 3rem;
+    }
+
+    section.orange-cta.row a {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.orange-cta.row .col-md-9 {
+        width: 80%;
+    }
+
+    section.orange-cta.row p {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+        text-align: center;
+    }
+
+    .what-is-expected {
+        overflow: hidden;
+        background-image: url("../../assets/img/people-study.webp");
+        background-position: bottom right -2rem;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        min-height: 80vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .what-is-expected:before {
+        content: '';
+        width: 500px;
+        height: 500px;
+        background: #ce1d1d;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        bottom: -1%;
+        right: 4%;
+    }
+
+
+    a.cta-orange-expected {
+        position: relative;
+        bottom: unset;
+        right: 20%;
+    }
+
+    section.banner-green-2 .row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.banner-green-2 .row .col-sm-12 {
+        width: 100%;
+    }
+
+    section.banner-green-2 {
+        background-color: #475914;
+        min-height: 80vh;
+        border-radius: 15px;
+        background-image: url("../../assets/img/group-people.webp");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    section.community .row {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.community .row .col-sm-12 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.community a {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.community h2 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    section.community p {
+        font-size: 2.3rem;
+        line-height: 4rem;
+        padding-left: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
